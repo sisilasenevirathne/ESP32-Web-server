@@ -26,6 +26,9 @@ void setup() {
   Serial.println("\nWiFi connected!");
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
+  Serial.println("Web Server started!");
+  Serial.print("Access the web server at: http://");
+  Serial.println(WiFi.localIP());
 
   // Define routes
   server.on("/", handle_OnConnect);
